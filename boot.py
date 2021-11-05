@@ -31,8 +31,8 @@ def bot():
 		msg=todas_as_msg_texto[-1]
 		print(msg)
 		#d
-		campo_de_txt = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[1]/div/div[2]')
-		campo_de_txt.click()
+		campo_de_txt = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div/div/div[2]/div[1]/div/div[2]')
+		campo_de_txt.click()                           
 
 		#busca da resposta no php
 		resposta = requests.get("http://localhost/bot/index.php", params ={'msg': {msg},'telefone':{telefonefinal}})
